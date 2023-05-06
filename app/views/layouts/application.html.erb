@@ -9,17 +9,12 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Jost:wght@400;700;900&display=swap"
-      rel="stylesheet"
-    >
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <header>
-      <div class="header-left">
-        <%= link_to 'Denyse Hadley Spiritual Direction and Coaching', root_path, class: 'home-link' %>
-      </div>
+      <%= link_to 'Denyse Hadley Spiritual Direction and Coaching', root_path, class: "home-link #{'white' if current_page?(root_path)}" %>
       <nav>
         <ul>
           <li class="mobile-only">
@@ -27,9 +22,7 @@
           </li>
         </ul>
       </nav>
-      <div class="header-right">
-        <%= link_to 'Contact', contact_index_path, class: 'contact-link' %>
-      </div>
+      <%= link_to 'Contact', contact_index_path, class: 'contact-link' %>
     </header>
 
     <div class="content">
@@ -38,7 +31,7 @@
 
     <% unless current_page?(contact_index_path) %>
       <footer>
-        <h2>Let's connect:</h2>
+        <h2>Let's connect.</h2>
         <%= link_to 'Schedule a Consultation', contact_index_path, class: 'button' %>
       </footer>
     <% end %>

@@ -15,13 +15,6 @@
   <body>
     <header>
       <%= link_to 'Denyse Hadley Spiritual Direction and Coaching', root_path, class: "home-link #{'white' if current_page?(root_path)}" %>
-      <nav>
-        <ul>
-          <li class="mobile-only">
-            <%= link_to 'Home', root_path, class: ('active' if current_page?(root_path)) %>
-          </li>
-        </ul>
-      </nav>
       <%= link_to 'Contact', contact_index_path, class: 'contact-link' %>
     </header>
 

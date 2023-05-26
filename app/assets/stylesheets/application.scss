@@ -42,7 +42,7 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    padding: 10px 50px;
+    padding: 20px 50px;
     z-index: 2;
 
     .home-link {
@@ -93,12 +93,14 @@ body {
 
     h2 {
       font-weight: normal;
+      margin: 28px 0;
       font-size: var(--font-size-lg);
     }
 
     h3 {
       font-weight: normal;
-      font-size: var(--font-size-sm);
+      font-size: var(--font-size-md);
+      line-height: 2;
       font-style: italic;
     }
 
@@ -134,22 +136,33 @@ body {
     .button {
       font-size: var(--font-size-md);
       color: var(--color-white) !important;
-      background-color: var(--color-blue);
+      background-color: var(--color-tan);
       padding: 30px 80px;
     }
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   header {
-    padding: 0;
-    .home-link { display: none; }
+    padding: 10px 30px !important;
+
     .contact-link { display: none; }
+
     ul {
       padding: 0;
+
       .mobile-only {
-        display: block !important;
+        display: inline-block !important;
+
+        a {
+          display: inline-flex;
+          padding: 8px;
+        }
       }
     }
+  }
+
+  footer {
+    padding: 60px 60px 80px 60px !important;
   }
 }

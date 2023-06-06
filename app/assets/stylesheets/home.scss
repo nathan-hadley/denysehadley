@@ -22,13 +22,6 @@
       padding: 50px;
       color: var(--color-white);
     }
-
-    .down-arrow {
-      position: absolute;
-      bottom: 30px;
-      right: 5%;
-      color: var(--color-white);
-    }
   }
 
   .block {
@@ -42,6 +35,16 @@
   .spiritual-direction-block {
     text-align: center;
     background-color: var(--color-light-tan);
+  }
+
+  .enneagram-block {
+    h2 {
+      text-align: center;
+    }
+
+    p {
+      padding: 0 40px;
+    }
   }
 
   .core-gift-block {

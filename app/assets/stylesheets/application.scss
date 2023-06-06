@@ -29,6 +29,15 @@ body {
   color: var(--color-font);
   background-color: var(--color-background);
 
+  .flash_success {
+    background-color: var(--color-tan);
+    color: var(--color-white);
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 4px;
+  }
+
   a, a:link {
     color: var(--color-link);
     text-decoration: none;

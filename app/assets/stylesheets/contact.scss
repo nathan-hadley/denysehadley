@@ -2,6 +2,45 @@
   margin: 50px;
   padding: 20px;
   text-align: center;
+
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+
+    .form-group {
+      margin-bottom: 20px;
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .form-control {
+        display: block;
+        width: 100%;
+        padding: 8px;
+        font-size: var(--font-size-sm);
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      textarea.form-control {
+        resize: vertical;
+      }
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 8px 16px;
+      font-size: 16px;
+      text-align: center;
+      vertical-align: middle;
+      cursor: pointer;
+      border: 1px solid transparent;
+      background-color: var(--color-tan);
+      color: var(--color-white);
+    }
+  }
 }
 
 @media (max-width: 600px) {

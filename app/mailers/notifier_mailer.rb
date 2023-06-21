@@ -6,7 +6,7 @@ class NotifierMailer < ApplicationMailer
     mail(
       "reply-to": email_address_with_name(email, name),
       subject: 'New contact form message',
-      body: message
+      body: "#{name} sent you this message:\n\n'#{message}'\n\nReply to #{email}"
     )
   end
 end

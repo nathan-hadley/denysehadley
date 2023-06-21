@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root 'home#index'
-  get 'home/index'
-  get 'contact/index'
+  resources 'home', only: :index
+  resources 'contact', only: :index
   resources :contact_form, only: %i[new create]
 end

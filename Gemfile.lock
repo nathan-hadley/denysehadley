@@ -116,8 +116,6 @@ GEM
       net-imap
       net-pop
       net-smtp
-    mail_interceptor (0.0.7)
-      activesupport
     marcel (1.0.2)
     matrix (0.4.2)
     method_source (1.0.0)
@@ -260,7 +258,6 @@ DEPENDENCIES
   font-awesome-rails
   importmap-rails
   jbuilder
-  mail_interceptor
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.3)
